@@ -1,13 +1,9 @@
 import subprocess
-from subprocess import call
-import logging
-import time
 import os
-import sys
-import pwd
 import json
+import edgeiq
 from lift import CheckPosture
-import numpy as np
+
 
 subprocess.check_call(['python','-m','pip','install','simpleaudio'])
 import simpleaudio as sa
@@ -47,7 +43,7 @@ def main():
             time.sleep(2.0)
             fps.start()
             
-           posture = CheckPosture(scale)
+            posture = CheckPosture(scale)
 
             # loop detection
             while True:
