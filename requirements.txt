@@ -1,1 +1,2 @@
 json==2.0.9
+simpleaudio==1.0.4
