@@ -5,7 +5,7 @@ import edgeiq
 from lift import CheckPosture
 
 
-subprocess.check_call(['python','-m','pip','install','simpleaudio'])
+subprocess.check_call(['python','-m','pip','install','simpleaudio==1.0.4'])
 import simpleaudio as sa
 
 CONFIG_FILE = "config.json"
